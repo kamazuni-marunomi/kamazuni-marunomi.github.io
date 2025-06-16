@@ -15,7 +15,8 @@ export default function Profile() {
     comment: 'プログラマになりたいって一生言ってる文鳥',
     image: 'images/tori.jpg',
     urls: {
-            Twitter: 'https://twitter.com/tdkakak'
+            Twitter: 'https://twitter.com/tdkakak',
+            note: 'https://note.com/kamazunimarunomi/magazines'
           }
   };
 
