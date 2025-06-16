@@ -1,144 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>かまずにまるのみどっとこむ</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/kamazunimarunomi.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* カスタムスタイル */
-        body {
-            font-family: 'Noto Sans JP', 'Inter', sans-serif;
-        }
-        .bg-asagi { background-color: #84B6BE; }
-        .text-asagi-dark { color: #72A2A5; }
-        .border-asagi-light { border-color: #BBD7D9; }
-        .hover-bg-asagi-dark:hover { background-color: #8EAEB0; }
-
-        html {
-            scroll-behavior: smooth;
-        }
-        section[id] {
-            scroll-margin-top: 80px;
-        }
-    </style>
-</head>
-<body class="bg-slate-50 text-slate-700">
-
-    <nav class="bg-asagi shadow-md fixed w-full top-0 z-50"> <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-white hover:text-slate-200 transition duration-300">かまずにまるのみどっとこむ</a>
-            <div class="space-x-4">
-                <a href="#hero" class="text-white hover-text-asagi-light transition duration-300">Home</a>
-                <a href="#profile" class="text-white hover-text-asagi-light transition duration-300">Profile</a>
-                <a href="#portfolio" class="text-white hover-text-asagi-light transition duration-300">Portfolio</a>
-            </div>
-        </div>
-    </nav>
-
-    <header id="hero" class="pt-20 text-center bg-asagi"> <div class="container mx-auto px-6 py-16">
-        <img src="images/shiba.png"
-                alt="柴犬と文鳥"
-                class="w-full max-w-md mx-auto h-auto object-cover rounded-lg"
-                onerror="this.onerror=null; this.src='https://placehold.co/600x400/A2C4C6/FFFFFF?text=柴犬イラスト+読み込みエラー';">
-        <p class="text-white text-lg mt-8">Ruby とか TypeScript とか Linux とかで遊んでいる柴犬と文鳥です。</p>
-    </header>
-
-    <section id="profile" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-asagi-dark mb-10 text-center">Profile</h2>
-            <div class="max-w-3xl mx-auto bg-slate-50 p-8 rounded-xl shadow-lg">
-                <div class="flex flex-col md:flex-row items-center md:items-start">
-                    <img src="images/hachi.jpg" alt="プロフィール写真" class="w-32 h-32 rounded-full md:mr-8 mb-6 md:mb-0 shadow-md">
-                    <div>
-                        <h3 class="text-2xl font-semibold text-slate-700 mb-2">Eiji Hachiya</h3>
-                        <p class="text-slate-600 mb-4 leading-relaxed">
-                            テニスが好きなWebアプリケーションエンジニアです
-                        </p>
-                        <div class="flex space-x-3">
-                            <a href="https://x.com/hachi_eiji<" class="text-asagi-dark hover:text-asagi transition duration-300">https://x.com/hachi_eiji</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="max-w-3xl mx-auto bg-slate-50 p-8 rounded-xl shadow-lg">
-                <div class="flex flex-col md:flex-row items-center md:items-start">
-                    <img src="images/tori.jpg" alt="プロフィール写真" class="w-32 h-32 rounded-full md:mr-8 mb-6 md:mb-0 shadow-md">
-                    <div>
-                        <h3 class="text-2xl font-semibold text-slate-700 mb-2">Tadaaki</h3>
-                        <p class="text-slate-600 mb-4 leading-relaxed">
-                            プログラマになりたいって一生言ってる文鳥
-                        </p>
-                        <div class="flex space-x-3">
-                            <a href="https://twitter.com/tdakak" class="text-asagi-dark hover:text-asagi transition duration-300">https://twitter.com/tdakak</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="py-16 bg-slate-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-asagi-dark mb-10 text-center">portfolio</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-z lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img src="images/oop_cover.jpg" alt="プログラミング勉強中の人にオブジェクト指向とは何なのかなんとなく伝えたい本" class="w-full h-80 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2">プログラミング勉強中の人にオブジェクト指向とは何なのかなんとなく伝えたい本</h3>
-                        <p class="text-slate-600 text-sm mb-4">オブジェクト指向プログラミングについてイラスト多めでふわっと解説した本です。</p>
-                        <a href="https://kamazunimarunomi.booth.pm/items/666660" class="text-asagi-dark hover:text-asagi font-medium transition duration-300">→ 詳細</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img src="images/linux_cover.jpg" alt="ふんわりさっくりLinuxカーネル" class="w-full h-80 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2">ふんわりさっくりLinuxカーネル</h3>
-                        <p class="text-slate-600 text-sm mb-4">Linuxカーネルの初歩の初歩についてイラスト多めでふわっと解説した本です。</p>
-                        <a href="https://kamazunimarunomi.booth.pm/items/1044107" class="text-asagi-dark hover:text-asagi font-medium transition duration-300">→ 詳細</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img src="images/roudou_cover.jpg" alt="文鳥と読む労働法" class="w-full h-80 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2">文鳥と読む労働法</h3>
-                        <p class="text-slate-600 text-sm mb-4">労働法について紹介している本です。文鳥はあまり出てきません。</p>
-                        <a href="https://kamazunimarunomi.booth.pm/items/1044119" class="text-asagi-dark hover:text-asagi font-medium transition duration-300">→ 詳細</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img src="images/web_cover.jpg" alt="小さな会社でWebプログラマはじめました" class="w-full h-80 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2">小さな会社でWebプログラマはじめました</h3>
-                        <p class="text-slate-600 text-sm mb-4">Web プログラマーになった女の子の4コマまんがです。</p>
-                        <a href="https://kamazunimarunomi.booth.pm/items/666590" class="text-asagi-dark hover:text-asagi font-medium transition duration-300">→ 詳細</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img src="images/waaah.png" alt="Waaah" class="w-full h-80 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2">Waaah</h3>
-                        <p class="text-slate-600 text-sm mb-4">予定日から妊娠月数の日付を取得する gem です。</p>
-                        <a href="https://github.com/torinoko/waaah/" class="text-asagi-dark hover:text-asagi font-medium transition duration-300">→ 詳細</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img src="images/buncho.png" alt="buncho" class="w-full h-80 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2">Buncho</h3>
-                        <p class="text-slate-600 text-sm mb-4">文鳥の体重を記録する gem です。</p>
-                        <a href="https://github.com/torinoko/waaah/" class="text-asagi-dark hover:text-asagi font-medium transition duration-300">→ 詳細</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-asagi text-white py-8 text-center">
-        <div class="container mx-auto px-6">
-            <p>&copy; 2025 kamazunimarunomi.com. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="/src/main.tsx"></script>
+    <link rel="stylesheet" href="/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>かまずにまるのみどっとこむ</title>
+  </head>
+  <body class="bg-slate-50 text-slate-700">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
