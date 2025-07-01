@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Noto Sans JP', 'Inter', sans-serif;
+}
+.bg-main { background-color: #84B6BE; }
+.text-main { color: #8EAEB0; }
+.text-main-dark { color: #72A2A5; }
+.hover-text-main-light { border-color: #EEDCB3; }
+.hover-bg-main-dark:hover { background-color: #8EAEB0; }
+
+html {
+    scroll-behavior: smooth;
+}
+section[id] {
+    scroll-margin-top: 80px;
+}
