@@ -1,4 +1,4 @@
-  name: Deploy Vite React App to GitHub Pages
+  name: Deploy Next.js App to GitHub Pages
 
   on:
     push:
@@ -30,7 +30,7 @@
         - name: Install dependencies
           run: npm install
 
-        - name: Build with Vite
+        - name: Build
           run: npm run build
 
         - name: Upload CNAME
