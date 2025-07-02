@@ -3,7 +3,7 @@ import Nav from '../components/Nav';
 
 export const metadata = {
   title: 'かまずにまるのみどっとこむ',
-  description: 'ぴよぴよ',
+  description: 'プログラミングしている柴犬と文鳥',
 }
 
 export default function RootLayout({
