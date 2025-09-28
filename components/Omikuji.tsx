@@ -15,7 +15,8 @@ export default function Omikuji() {
         <h1 className="text-3xl font-bold text-main mb-8">おみくじ</h1>
         {result ? (
             <div className="flex flex-col items-center">
-                <p className="text-main text-xl">♡ {result.message} ♡</p>
+                <p className="text-main text-2xl font-bold">♡ 大吉 ♡</p>
+                <p className="text-main text-xl mt-4">{result.message}</p>
                 <img src={result.image} alt={result.message} className="w-1/3 mt-8" />
             </div>
         ) : (
