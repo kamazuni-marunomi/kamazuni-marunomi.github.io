@@ -1,42 +1,21 @@
-import { contents } from "./contents"
+export type OmikujiResult = {
+    message: string;
+    image: string;
+};
 
-export const messages = [
-  // 日本語
-  "大吉！今日はいい日になりそう！",
-  // 英語
-  "Excellent luck! Today is going to be a good day!",
-  // フランス語
-  "Très chanceux ! Aujourd'hui sera une bonne journée !",
-  // ドイツ語
-  "Großes Glück! Heute wird ein guter Tag!",
-  // スペイン語
-  "¡Gran suerte! ¡Hoy será un buen día!",
-  // イタリア語
-  "Grande fortuna! Oggi sarà una bella giornata!",
-  // 中国語（簡体）
-  "大吉！今天是个好日子！",
-  // 中国語（繁体）
-  "大吉！今天會是美好的一天！",
-  // 韓国語
-  "대길! 오늘은 좋은 하루가 될 거예요!",
-  // アラビア語
-  "حظ عظيم! سيكون اليوم يوماً رائعاً!",
-  // ヒンディー語
-  "बहुत शुभ! आज का दिन अच्छा होगा!",
-  // タイ語
-  "โชคดีมาก! วันนี้เป็นวันที่ดีแน่นอน!",
-  // インドネシア語
-  "Keberuntungan besar! Hari ini akan menjadi hari yang baik!",
-  // ベトナム語
-  "May mắn lớn! Hôm nay sẽ là một ngày tốt lành!",
-  // ポルトガル語
-  "Grande sorte! Hoje será um bom dia!",
-  // スウェーデン語
-  "Stor tur! Idag blir en bra dag!",
-  // トルコ語
-  "Büyük şans! Bugün güzel bir gün olacak!",
-  // フィリピン語（タガログ語）
-  "Napakaswerte! Magiging maganda ang araw na ito!",
-  // ウクライナ語
-  "Велика удача! Сьогодні буде гарний день!"
-];
+export const messages: OmikujiResult[] = [
+  { message: '散歩中ににゃんこに会えるかも', image: '/images/omikuji/nekoniaeru.png' },
+  { message: '散歩中のわんこと触れ合えるチャンス', image: '/images/omikuji/sanpowanko.png' },
+  { message: 'かわいい小鳥を見かける', image: '/images/omikuji/kawaiikotori.png' },
+  { message: 'きれいな玉虫を発見できる可能性が3％上がる', image: '/images/omikuji/tamamushi.png' },
+  { message: 'ニホントカゲのこどものしっぽは青くてきらきら', image: '/images/omikuji/nihontokage.png' },
+  { message: 'みのむしと目があう', image: '/images/omikuji/minomushi.png' },
+  { message: 'お花がきれいだね', image: '/images/omikuji/ohanakirei.png' },
+  { message: '大きいわんこ', image: '/images/omikuji/ookiiwanko.png' },
+  { message: '食べたおやつがおいしい', image: '/images/omikuji/oishiioyatsu.png' },
+  { message: 'おいしいごはん！', image: '/images/omikuji/oishiigohan.png' },
+  { message: 'ちょっとかしこさが上がるかも？', image: '/images/omikuji/kashikoi.png' },
+  { message: '周りの人たちにやさしくしたいね〜', image: '/images/omikuji/yasashisa.png' },
+  { message: 'けんかしてもなかなおり', image: '/images/omikuji/nakanaori.png' },
+  { message: 'ふだん見かけない鳥さんと遭遇しそう', image: '/images/omikuji/mezurashiitori.png' },
+]
