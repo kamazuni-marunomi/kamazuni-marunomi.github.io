@@ -8,7 +8,7 @@ export default function Nav() {
         <div className="space-x-4 text-white ">
             <a href="/#profile" className="hover:hover-text-main-light transition duration-300">Profile</a>
             <a href="/#portfolio" className="hover:hover-text-main-light transition duration-300">Portfolio</a>
-            <a href="/omikuji">Omijiku</a>
+            <a href="/omikuji">Omikuji</a>
         </div>
       </div>
     </nav>
