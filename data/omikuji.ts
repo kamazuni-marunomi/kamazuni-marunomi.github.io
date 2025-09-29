@@ -13,9 +13,5 @@ export const messages: OmikujiResult[] = [
   { message: 'お花がきれいだね〜', image: '/images/omikuji/ohanakirei.png' },
   { message: '大きいわんこ', image: '/images/omikuji/ookiiwanko.png' },
   { message: '食べたおやつがおいしいよ', image: '/images/omikuji/oishiioyatsu.png' },
-  { message: 'おいしいごはん！', image: '/images/omikuji/oishiigohan.png' },
-  { message: 'ちょっとかしこさが上がるかも？', image: '/images/omikuji/kashikoi.png' },
-  { message: '周りの人たちにやさしくしたいね', image: '/images/omikuji/yasashisa.png' },
-  { message: 'けんかしてもなかなおり', image: '/images/omikuji/nakanaori.png' },
-  { message: 'ふだん見かけない鳥さんと遭遇しそう', image: '/images/omikuji/mezurashiitori.png' },
+  { message: 'けんかしてもなかなおり', image: '/images/omikuji/nakanaori.png' }
 ]
